@@ -1,0 +1,2 @@
+target="LAZURITE mini series"
+program="data/920j/example/blue_orange_led.bin"
