@@ -31,5 +31,10 @@ If you need to write same program to many Lazurite nodes, this tool will help yo
 3. remove description of "crontab -e", if you input
 4. delete all files in $install_dir
 
+## Notes
+1. The default location $install_dir is "~/.lazurite/writer".
+2. If you want to stop writing program tempolary for some reasons, just delete contents of $install_dir/data/config.txt as empty file.
 
-#### the default location $install_dir is "~/.lazurite/writer".
+       cd $install_dir/data/
+       mv config.txt config.bak
+       touch config.txt
