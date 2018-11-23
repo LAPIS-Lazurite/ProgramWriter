@@ -12,7 +12,7 @@ If you need to write same program to many Lazurite nodes, this tool will help yo
 2. install FTDI library
 
        download FTDI library and copy to $install_dir/ftdi folder
-       sudo cp -r $install_dir/ftdi/build/* /usr/local/lib/
+       sudo cp $install_dir/ftdi/build/* /usr/local/lib/
        cd /usr/local/lib/
        sudo ln -s libftd2xx.so.1.x.x libftd2xx.so
        cd $install_dir/bootmode; make
