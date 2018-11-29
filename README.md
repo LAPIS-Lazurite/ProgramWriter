@@ -2,7 +2,7 @@
 Easy Lazurite program writer environment for Linux
 
 ## Description
-If you need to write same program to many Lazurite nodes, this tool will help you. After you install this tool to a host Linux device, it will write program by just hot-pluging Lazurite node to the host.
+If you need to write same program to many Lazurite nodes, this tool will help you. After you install this tool to a host Linux device, it will write program by just USB hot-pluging Lazurite node to the host.
 
 ## Installation
 1. run installer
@@ -32,8 +32,9 @@ If you need to write same program to many Lazurite nodes, this tool will help yo
 4. delete all files in $install_dir
 
 ## Notes
-1. The default location $install_dir is "~/.lazurite/writer".
-2. If you want to stop writing program tempolary for some reasons, just delete contents of $install_dir/data/config.txt as empty file.
+1. If you want to update Lazurite mini series such as 920J, you need Mini Writer Type A or B.
+2. The default location $install_dir is "~/.lazurite/writer".
+3. If you want to stop writing program tempolary for some reasons, just delete contents of $install_dir/data/config.txt as empty file.
 
        cd $install_dir/data/
        mv config.txt config.bak
