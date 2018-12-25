@@ -6,7 +6,8 @@ If you need to write same program to many Lazurite nodes, this tool will help yo
 
 ## Installation
 1. run installer
-       sudo apt update
+
+        sudo apt update
        ./install.sh
 
 2. install FTDI library
