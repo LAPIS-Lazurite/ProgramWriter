@@ -6,7 +6,7 @@ If you need to write same program to many Lazurite nodes, this tool will help yo
 
 ## Installation
 1. run installer
-
+       sudo apt update
        ./install.sh
 
 2. install FTDI library
@@ -18,12 +18,11 @@ If you need to write same program to many Lazurite nodes, this tool will help yo
        cd $install_dir/bootmode; make
        cd $install_dir/reset; make
 
-
 3. if you use this on raspbian os, run 'crontab -e' and input below command.
 
        @reboot sudo systemctl restart systemd-udevd; sudo systemctl daemon-reload
 
-4. you can specify target and program name in $install_dir/data/config.txt file.
+4. you can specify target and program name in $install_dir/config.csv file.
 
 ## Uninstallation
 1. delete FTDI library in /usr/local/lib, if necessary
@@ -34,8 +33,9 @@ If you need to write same program to many Lazurite nodes, this tool will help yo
 ## Notes
 1. If you want to update Lazurite mini series such as 920J, you need Mini Writer Type A or B.
 2. The default location $install_dir is "~/.lazurite/writer".
-3. If you want to stop writing program tempolary for some reasons, just delete contents of $install_dir/data/config.txt as empty file.
+3. If you want to stop writing program tempolary for some reasons, just rename $install_dir/config.csv as follows.
 
-       cd $install_dir/data/
-       mv config.txt config.bak
-       touch config.txt
+       cd $install_dir/
+       mv config.csv config.bak
+
+4. This tool is made for targeting Lazurite 920J and expects the program written on it shall be test920j as factory default.
