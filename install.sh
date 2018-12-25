@@ -1,17 +1,12 @@
 #!/bin/bash
 
 install_dir="$HOME/.lazurite/writer"
-env_file="env.txt"
 rule_file="99-lazurite-writer.rules"
 
 #make directory and copy files
 mkdir -p $install_dir
 cp -r * $install_dir
 cd $install_dir
-
-#make environment variable
-uname=`uname -r`
-echo "lib_path=\"/lib/modules/$uname/kernel/drivers/usb/serial\"" > $env_file
 
 #install xmodem
 sudo apt install lrzsz
